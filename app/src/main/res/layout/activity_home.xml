@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="28dp">
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:text="Your Name"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/textViewYourName"
+        android:src="@drawable/profile_image" />
+
+
+    <ImageView
+        android:id="@+id/imageViewNotification"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rounded_textview_background"
+        android:src="@drawable/notification" />
+
+
+    <TextView
+        android:id="@+id/textViewNotification"
+        android:layout_width="287dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/rounded_right_side"
+        android:text="   You have 1 task due"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewNotification"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="#146FD3"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <!-- Content inside CardView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewAi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/yellow_ai_icon" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewAi"
+                android:text="Generated Task 1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="8dp"
+                android:text="Small Description for the generated task"
+                android:textColor="#E3E2E2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textViewDescription"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/rounded_imageview_background"
+                android:clickable="true"
+                android:onClick="onGeneratedTaskClicked"
+                android:src="@drawable/baseline_arrow_circle_right_24" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:background="@drawable/gradient_background">
+    <TextView
+        android:id="@+id/textViewLetsGetYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:text="Let's get you" />
+
+    <TextView
+        android:id="@+id/textViewSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textViewLetsGetYou"
+        android:text="Setup!" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textViewSetup"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_image" />
+
+    <ImageView
+        android:id="@+id/imageViewPlus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/baseline_add_circle_24" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="13dp"
+        android:textColorHint="#313131"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:textColorHint="#313131"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmEmail"
+        android:background="@drawable/edittext_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#313131"
+        android:hint="Confirm Email"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:background="@drawable/edittext_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#313131"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextConfirmEmail"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:background="@drawable/edittext_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textColorHint="#313131"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:background="@drawable/edittext_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textColorHint="#313131"
+        android:inputType="text"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/green_buttons"
+        android:textColor="@color/black"
+        android:hapticFeedbackEnabled="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Create new account" />
+
+</RelativeLayout>

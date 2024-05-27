@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/cardViewQuestion"
+android:layout_below="@id/textViewTaskDescription"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardBackgroundColor="#146FD3"
+app:cardCornerRadius="8dp"
+app:cardElevation="4dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Question 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="You can use any question here and set up couple of answers"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewQuestion">
+
+            <RadioButton
+            android:id="@+id/radioButtonAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onAnswerClicked"
+            android:text="Answer 1"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RadioGroup>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
