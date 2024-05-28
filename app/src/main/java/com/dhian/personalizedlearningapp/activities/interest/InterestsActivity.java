@@ -44,8 +44,8 @@ public class InterestsActivity extends AppCompatActivity {
     }
 
     public void onNextButtonClick(View view) {
-        if (selectedInterest != null) {
-            String allInterests = String.join(", ", this.selectedInterests);
+        String allInterests = String.join(", ", this.selectedInterests);
+        if (!this.selectedInterests.isEmpty()) {
             long result = dataSource.addInterest(allInterests);
 
             if (result != -1) {
