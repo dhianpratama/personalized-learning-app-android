@@ -91,6 +91,7 @@
         android:layout_marginBottom="40dp"
         android:clickable="true"
         android:onClick="onNeedAccountClicked"
-        android:text="Need an Account?" />
+        android:text="Need an account?"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>
